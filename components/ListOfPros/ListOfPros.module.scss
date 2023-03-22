@@ -1,0 +1,209 @@
+@import "styles/assets/breakpoints.module";
+
+.listWrapper{
+  padding-bottom: 180px;
+  width: 100%;
+  max-width: 1075px;
+  margin: 0 auto;
+  @include desktop{
+    max-width: 862px;
+    padding-bottom: 157px;
+  }
+  @include tablet{
+    max-width: 800px;
+    padding: 0 50px 128px;
+  }
+  @include mobile{
+    max-width: 100%;
+    padding: 0 25px 106px;
+  }
+}
+
+.topText{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 11px;
+}
+
+.listHeader{
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  max-width: 745px;
+  margin: 0 auto 73px;
+  @include tablet{
+    font-size: 46px;
+    line-height: 110%;
+    margin-bottom: 60px;
+  }
+  @include mobile{
+    font-size: 36px;
+  }
+}
+
+.listItem{
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #E1E1E1;
+  @include mobile{
+    height: auto;
+    display: block;
+    padding-top: 17px;
+    position: relative;
+  }
+}
+
+.avatar{
+  border-radius: 50%;
+  @include mobile{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.indexText{
+  font-style: italic;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  width: 40px;
+  @include mobile{
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.middleWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  @include mobile{
+    margin-bottom: 17px;
+  }
+}
+
+.name{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-left: 24px;
+  margin-right: auto;
+  @include mobile{
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #000000;
+    margin-left: 15px;
+  }
+}
+
+.sessions{
+  display: none;
+  @include mobile{
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #A5A5A5;
+  }
+}
+
+.earn{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-right: 36px;
+  @include mobile{
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #000000;
+  }
+}
+
+.socials{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0 22px;
+  @include mobile{
+    min-width: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 18px;
+    gap: 0 18px
+  }
+}
+
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 123px;
+  margin: 41px auto 0;
+  @include mobile{
+    margin-top: 25px;
+  }
+  p{
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #BCBCBC;
+    cursor: pointer;
+  }
+  .paginationActive{
+    color: #000000;
+    text-decoration: underline;
+  }
+}
+
+.topBlockWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding-right: 185px;
+  padding-left: 50px;
+  @include mobile{
+    display: none;
+  }
+}
+
+.topInfoText{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #544D4D;
+}
+
+.otherPlayers{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F5F7;
+  height: 450px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000000;
+}

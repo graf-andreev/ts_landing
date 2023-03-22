@@ -1,0 +1,105 @@
+@import "styles/assets/breakpoints.module";
+
+.blockWrapper{
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 121px;
+  @include tablet{
+    padding: 0 20px;
+  }
+}
+
+.topText{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 15px;
+}
+
+.header{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #222222;
+  max-width: 690px;
+  margin: 0 auto 70px;
+  @include desktop{
+    font-size: 56px;
+  }
+  @include tablet{
+    font-size: 46px;
+  }
+  @include mobile{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+}
+
+.articleItem{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 51px;
+  @include mobile{
+    display: block;
+    margin-bottom: 25px;
+  }
+  img{
+    margin-right: 29px;
+    @include mobile{
+      margin-right: 0;
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  }
+  .articleHeader{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #222222;
+    margin-bottom: 17px;
+  }
+  .articleSubHeader{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: -0.015em;
+    color: #222222;
+    margin-bottom: 17px;
+  }
+  .articleButton{
+    background: #222222;
+    border-radius: 100px;
+    padding: 15px 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: .3s;
+    &:hover{
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #000000;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+}
+
+.loadButton{
+  background: #FFFFFF;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  border-radius: 100px;
+  padding: 15px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: capitalize;
+  color: #222222;
+  margin: 0 auto;
+}

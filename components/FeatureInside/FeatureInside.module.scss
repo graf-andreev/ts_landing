@@ -1,0 +1,125 @@
+@import "styles/assets/breakpoints.module";
+
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto 264px;
+  @include tablet{
+    margin-bottom: 100px;
+  }
+}
+
+.topText{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 15px;
+  @include tablet{
+    font-size: 12px;
+    line-height: 124%;
+  }
+}
+
+.blockHeader{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 85px;
+  @include desktop{
+    font-size: 56px;
+  }
+  @include tablet{
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 36px;
+  }
+}
+
+.featuresWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include tablet{
+    padding: 0 50px;
+  }
+  @include mobile{
+    padding: 0 20px;
+  }
+}
+
+.featureItem1,
+.featureItem2,
+.featureItem3,
+.featureItem4{
+  width: 49%;
+  height: 594px;
+  padding: 40px;
+  background-color: #F5F5F7;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  @include tablet {
+    width: 100%;
+    padding: 30px 20px 0 20px;
+    height: 361px;
+  }
+}
+
+.featureItem1{
+  background-image: url('../../public/coaching_landing_images/feature1.png');
+  background-size: 80%;
+}
+
+.featureItem2{
+  background-image: url('../../public/coaching_landing_images/feature2.png');
+  background-size: auto;
+  background-position: center 250px;
+  @include tablet{
+    background-size: 80%;
+    background-position: center 160px;
+  }
+}
+
+.featureItem3{
+  background-image: url('../../public/coaching_landing_images/feature3.png');
+  background-position: 0 200px;
+}
+
+.featureItem4{
+  background-image: url('../../public/coaching_landing_images/feature4.png');
+  background-position: right center;
+  @include tablet{
+    background-image: url('../../public/coaching_landing_images/feature4-mob.png');
+    background-size: 90%;
+    background-position: center 201px;
+  }
+}
+
+.header{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 12px;
+  @include tablet{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+  }
+}
+
+.text{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000000;
+  max-width: 340px;
+}

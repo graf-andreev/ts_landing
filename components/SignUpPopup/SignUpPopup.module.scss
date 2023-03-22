@@ -1,0 +1,237 @@
+@import "styles/assets/breakpoints.module";
+
+.popupOverlay{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  @include mobile{
+    align-items: flex-end;
+  }
+}
+
+.popupWrapper{
+  width: 100%;
+  max-width: 460px;
+  background: #FFFFFF;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding-top: 64px;
+  padding-bottom: 56px;
+  position: relative;
+  z-index: 2;
+  @include mobile{
+    border-radius: 0;
+    bottom: 0;
+  }
+}
+
+.innerWrapper{
+  width: 100%;
+  max-width: 288px;
+  margin: 0 auto;
+  @include mobile{
+    max-width: 100%;
+    padding: 0 44px;
+  }
+}
+
+.closeImg{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.popupHeader{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 90%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 40px;
+  @include mobile{
+    font-size: 24px;
+    line-height: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.subheader{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 29px;
+  @include mobile{
+    margin-bottom: 20px;
+  }
+}
+
+.inputWrapper{
+  width: 100%;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.emailFocused{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  color: #882FF9;
+  padding: 4px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -10px;
+  left: 16px;
+}
+
+.emailInput{
+  width: 100%;
+  height: 56px;
+  border: 1px solid #D2D2D2;
+  border-radius: 8px;
+  padding-left: 20px;
+  outline: none;
+  &::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    letter-spacing: -0.02em;
+    color: #979797;
+  }
+  &:focus{
+    border: 1px solid #882FF9;
+    .span{
+      display: block;
+    }
+    &::placeholder{
+      opacity: 0;
+    }
+  }
+}
+
+.errorState{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  color: #DF4646;
+  margin-top: 6px;
+  img{
+    margin-right: 8px;
+  }
+}
+
+.createButton{
+  background: #5A65EA;
+  border-radius: 100px;
+  height: 56px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 100%;
+  position: relative;
+  img{
+    margin-right: 10px;
+  }
+  &:disabled{
+    background: #E6E6E6;
+    color: #B6B6B6;
+  }
+}
+
+.changeBlock{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 90%;
+  color: #000000;
+  margin: 64px auto 0;
+  text-align: center;
+  span{
+    color: rgba(34, 34, 34, 0.7);
+    cursor: pointer;
+  }
+}
+
+.divider{
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.4);
+  position: relative;
+  z-index: 2;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 44%;
+    height: 1px;
+    background-color: rgba(34, 34, 34, 0.2);
+    left: 0;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: 44%;
+    height: 1px;
+    background-color: rgba(34, 34, 34, 0.2);
+    right: 0;
+  }
+}
+
+.createButtonLoading{
+  color: transparent;
+  &:after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 4px solid transparent;
+    border-top-color: #ffffff;
+    border-radius: 50%;
+    animation: button-loading-spinner 1s ease infinite;
+  }
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.dividerBlock{
+  width: 100%;
+  height: 20px;
+}

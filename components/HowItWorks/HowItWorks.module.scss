@@ -1,0 +1,126 @@
+@import "styles/assets/breakpoints.module";
+
+.howWrapper{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto 200px;
+  @include desktop{
+    margin-bottom: 180px;
+  }
+  @include tablet{
+    padding: 0 50px;
+    margin-bottom: 160px;
+  }
+  @include mobile{
+    padding: 0 24px;
+    margin-bottom: 162px;
+  }
+}
+
+.sliderWrapper{
+  padding-left: 150px;
+  @include desktop{
+    padding-left: 70px;
+  }
+  @include tablet{
+    padding-left: 0;
+  }
+}
+
+.howHeader{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin: 0 auto 90px;
+  max-width: 660px;
+  @include desktop{
+    font-size: 56px;
+    margin-bottom: 70px;
+  }
+  @include tablet{
+    font-size: 46px;
+    margin-bottom: 60px;
+  }
+  @include mobile{
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.howItem{
+  background: #F5F5F7;
+  padding: 10px 38px 0 38px;
+  margin-right: 20px;
+  max-width: 500px;
+  height: 505px;
+  @include tablet{
+    padding: 18px 24px;
+    width: 48%;
+    margin-right: 0;
+    height: 310px;
+    max-width: 100%;
+  }
+  @include mobile{
+    width: 100%;
+  }
+}
+
+.howItemHeader{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 12px;
+  @include tablet{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 11px;
+  }
+  @include mobile{
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.howItemText{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.015em;
+  color: #000000;
+  @include tablet{
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.howIndex{
+  font-weight: 400;
+  font-size: 160px;
+  line-height: 194px;
+  color: #882FF9;
+  @include tablet{
+    font-size: 70px;
+    line-height: 85px;
+    margin-bottom: 7px;
+  }
+  @include mobile{
+    font-size: 50px;
+    line-height: 61px;
+    margin-bottom: 11px;
+  }
+}
+
+.itemsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px 24px;
+  @include mobile{
+    gap: 10px 0;
+  }
+}

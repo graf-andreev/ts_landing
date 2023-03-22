@@ -1,0 +1,420 @@
+@import "styles/assets/breakpoints.module";
+
+.calcWrapper{
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto 200px;
+  @include desktop{
+    max-width: 1300px;
+    padding: 0 70px;
+    margin-bottom: 180px;
+  }
+  @include tablet{
+    padding: 0 50px;
+    margin-bottom: 160px;
+  }
+  @include mobile{
+    padding: 0 25px;
+    margin-bottom: 145px;
+  }
+}
+
+.topText{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 15px;
+  @include tablet{
+    margin-bottom: 13px;
+  }
+  @include mobile{
+    margin-bottom: 11px;
+  }
+}
+
+.header{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 90px;
+  @include desktop{
+    font-size: 56px;
+    margin-bottom: 70px;
+  }
+  @include tablet{
+    font-size: 46px;
+    line-height: 110%;
+    margin-bottom: 60px;
+  }
+  @include mobile{
+    font-size: 36px;
+    line-height: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.innerWrapper{
+  display: flex;
+  align-items: stretch;
+  gap: 0 20px;
+  @include mobile{
+    flex-direction: column;
+    gap: 12px 0;
+  }
+}
+
+.calcBlock{
+  width: 100%;
+  background: #F5F5F7;
+  padding: 60px;
+  @include desktop{
+    padding: 50px;
+  }
+  @include tablet{
+    padding: 30px 24px;
+  }
+}
+
+.rangeContainer{
+  &:first-child{
+    margin-bottom: 50px;
+    @include mobile{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.rateSkill{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-right: 10px;
+  @include tablet{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @include mobile{
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.textHours{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 16px;
+  max-width: 390px;
+}
+
+.hours{
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 121px;;
+  letter-spacing: -0.05em;
+  color: #000000;
+  margin-bottom: 5px;
+  @include desktop{
+    font-size: 82px;
+    line-height: 99px;
+  }
+  @include tablet{
+    font-size: 50px;
+    line-height: 61px;
+  }
+  @include mobile{
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+.rangeBottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 17px;
+  p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+    @include desktop{
+      font-size: 16px;
+      line-height: 19px
+    }
+  }
+}
+
+.smile {
+  margin-bottom: 44px;
+  @include desktop{
+    margin-bottom: 20px;
+  }
+  @include tablet{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+  @include mobile{
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.result{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.topWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.plansButton{
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 0 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  height: 40px;
+  background: #F5F5F7;
+  &:hover{
+    opacity: .8;
+    transition: .3s all;
+  }
+}
+
+.pcCheckBox{
+  display: none;
+  +label{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .checkboxLabel{
+      background-color: #F5F5F7;
+      border: 1px solid #000000;
+      border-radius: 24px;
+      width: 50px;
+      height: 25px;
+      margin-right: 9px;
+      position: relative;
+      p{
+        position: absolute;
+        border: 1px solid #000000;
+        width: 17px;
+        height: 17px;
+        background: #F5F5F7;
+        top: 3px;
+        left: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+  &:checked + label {
+    .checkboxLabel{
+      background: #9D56F3;
+      border: none;
+      p{
+        left: initial;
+        top: 4px  ;
+        border: none;
+        right: 4px;
+      }
+  }
+  }
+}
+
+.pcBlock{
+  display: flex;
+  align-items: center;
+  margin-bottom: 85px;
+  @include desktop{
+    margin-bottom: 52px;
+  }
+  @include tablet{
+    margin-bottom: 73px;
+  }
+  @include mobile{
+    margin-bottom: 85px;
+  }
+  img{
+    margin-left: 9px;
+    cursor: pointer;
+  }
+}
+
+.graphsWrapper{
+  display: flex;
+  align-items: flex-end;
+  gap: 0 15px;
+}
+
+.graphWrapper{
+  width: 33%;
+}
+
+.revenue{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.05em;
+  display: flex;
+  @include desktop{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  @include tablet{
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.revIndex{
+  font-size: 20px;
+  @include desktop{
+    font-size: 17px;
+  }
+  @include tablet{
+    font-size: 12px;
+  }
+}
+
+.months{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 92%;
+  color: #FFFFFF;
+  @include tablet{
+    font-size: 13px;
+    line-height: 16px;
+  }
+  @include mobile{
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.graph1,
+.graph2,
+.graph3{
+  background: linear-gradient(205.94deg, #E243D3 16.36%, #9458F6 92.27%);
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @include tablet{
+    padding: 10px;
+  }
+  @include mobile{
+    padding: 8px;
+  }
+}
+
+.graph1{
+  height: 176px;
+  @include desktop{
+    height: 127px;
+  }
+  @include tablet{
+    height: 142px;
+  }
+  @include mobile{
+    height: 83px;
+  }
+}
+
+.graph2{
+  height: 281px;
+  @include desktop{
+    height: 233px;
+  }
+  @include tablet{
+    height: 171px;
+  }
+  @include mobile{
+    height: 152px;
+  }
+}
+
+.graph3{
+  height: 406px;
+  @include desktop{
+    height: 322px;
+  }
+  @include tablet{
+    height: 220px;
+  }
+  @include mobile{
+    height: 180px;
+  }
+}
+
+.tooltipWrapper{
+  position: relative;
+  .toolTip{
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 246px;
+    padding: 20px;
+    top: 35px;
+    left: -200px;
+    z-index: 3;
+    p{
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 10px;
+    }
+    span{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140%;
+      letter-spacing: -0.015em;
+      color: #000000;
+    }
+  }
+  img{
+    &:hover + .toolTip{
+        display: block;
+    }
+  }
+}
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+  img{
+    cursor: pointer;
+  }
+  @include tablet{
+    margin-bottom: 20px;
+  }
+}

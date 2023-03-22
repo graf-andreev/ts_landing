@@ -1,0 +1,248 @@
+@import "styles/assets/breakpoints.module";
+
+.overView{
+  width: 100%;
+  max-width: 1620px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  @include mobile{
+    padding-bottom: 23px;
+  }
+}
+
+.overTop{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 19px;
+  @include mobile{
+    font-size: 12px;
+    margin-bottom: 11px;
+  }
+}
+
+.overHeader{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin: 0 auto 118px;
+  max-width: 538px;
+  @include desktop{
+    font-size: 56px;
+    margin-bottom: 70px;
+  }
+  @include tablet{
+    font-size: 46px;
+    margin-bottom: 90px;
+  }
+  @include mobile{
+    font-size: 36px;
+    line-height: 90%;
+    margin-bottom: 42px;
+    width: 70%;
+  }
+}
+
+.overItem,
+.overItemReverse{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  @include desktop{
+    margin-bottom: 75px;
+  }
+  @include tablet{
+    margin-bottom: 64px;
+  }
+  @include mobile{
+    flex-direction: column-reverse;
+    padding: 19px 24px 58px 24px;
+    margin-bottom: 0;
+  }
+}
+
+.overItemReverse{
+  @include mobile{
+    flex-direction: column;
+  }
+}
+
+.textBlock{
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  @include mobile{
+    max-width: 100%;
+  }
+}
+
+.itemHeader,
+.itemHeaderBottom{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: #000000;
+  margin-bottom: 16px;
+  @include desktop{
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @include tablet{
+    font-size: 32px;
+    line-height: 39px;
+  }
+  @include mobile{
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+  }
+}
+
+.itemHeaderBottom{
+  max-width: 300px;
+  margin-bottom: 40px;
+}
+
+.itemText{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 27px;
+  cursor: pointer;
+  @include tablet{
+    font-size: 16px;
+  }
+  @include mobile{
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.text,
+.activeText{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  letter-spacing: -0.015em;
+  color: #000000;
+  opacity: 0.4;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.activeText{
+  opacity: 1;
+  &:before{
+    content: '';
+    position: absolute;
+    background: #882FF9;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    z-index: 2;
+  }
+}
+
+.itemButton{
+  height: 50px;
+  background: #882FF9;
+  border-radius: 100px;
+  padding: 0 45px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  &:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), #882FF9;
+    transition: .3s all;
+  }
+  &:active{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), #882FF9;
+  }
+}
+
+.image2{
+  background-image: url('../../public/coaching_landing_images/overview_2.jpg');
+}
+
+.image3{
+  background-image: url('../../public/coaching_landing_images/img1.jpg');
+}
+
+.image4{
+  background-image: url('../../public/coaching_landing_images/img2.jpg');
+}
+
+.image5{
+  background-image: url('../../public/coaching_landing_images/img3.jpg');
+}
+
+.image3ru{
+  background-image: url('../../public/coaching_landing_images/img1-ru.jpg');
+}
+
+.image4ru{
+  background-image: url('../../public/coaching_landing_images/img2-ru.jpg');
+}
+
+.image5ru{
+  background-image: url('../../public/coaching_landing_images/img3-ru.jpg');
+}
+
+.image1,
+.image2,
+.image3,
+.image4,
+.image5,
+.image3ru,
+.image4ru,
+.image5ru{
+  width: 800px;
+  height: 642px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @include desktop{
+    width: 710px;
+    height: 570px;
+  }
+  @include tablet{
+    width: 438px;
+    height: 352px;
+  }
+  @include mobile{
+    width: 100%;
+    height: 247px;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+}
+
+.textsWrapper{
+  position: relative;
+  &:after{
+    content: '';
+    background: #F2F2F2;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -20px;
+  }
+}

@@ -1,0 +1,117 @@
+@import "styles/assets/breakpoints.module";
+
+.faqWrapper{
+  width: 100%;
+  max-width: 1072px;
+  margin: 0 auto;
+  padding-bottom: 135px;
+  @include desktop{
+    max-width: 860px;
+  }
+  @include tablet{
+    max-width: 100%;
+    padding: 0 50px 95px;
+  }
+  @include mobile{
+    padding: 0 25px 120px;
+  }
+}
+
+.faqText{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 124%;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8C4EDB;
+  margin-bottom: 15px;
+  @include mobile{
+    margin-bottom: 11px;
+  }
+}
+
+.faqHeader{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 60px;
+  @include desktop{
+    font-size: 56px;
+    margin-bottom: 57px;
+  }
+  @include tablet{
+    font-size: 46px;
+    margin-bottom: 60px;
+  }
+  @include mobile{
+    font-size: 36px;
+    line-height: 90%;
+    margin-bottom: 40px;
+  }
+}
+
+.faqItem{
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 33px;
+  @include mobile{
+    margin-bottom: 24px;
+  }
+}
+
+.headerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 33px;
+  @include mobile{
+    margin-bottom: 16px;
+  }
+}
+
+.itemHeader{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  color: #000000;
+  @include mobile{
+    font-size: 16px;
+    line-height: 120%;
+    max-width: 91%;
+  }
+}
+
+.itemText{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em;
+  color: #000000;
+  margin-bottom: 30px;
+  max-width: 91%;
+  @include mobile{
+    line-height: 22px;
+    max-width: 100%;
+  }
+}
+
+.chevron{
+  transition: .3s all;
+}
+
+.chevronRotate{
+  transform: rotate(180deg);
+  transition: .3s all;
+}
+
+.listHeader{
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
