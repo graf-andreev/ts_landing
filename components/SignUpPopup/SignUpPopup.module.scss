@@ -34,7 +34,7 @@
 
 .innerWrapper{
   width: 100%;
-  max-width: 288px;
+  max-width: 310px;
   margin: 0 auto;
   @include mobile{
     max-width: 100%;
@@ -47,6 +47,25 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
+  background-color: #ffffff;
+  width: 30px;
+  height: 30px;
+  &:before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #D2D2D2;
+    transform: rotate(45deg);
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #D2D2D2;
+    transform: rotate(-45deg);
+  }
 }
 
 .popupHeader{

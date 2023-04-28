@@ -145,7 +145,7 @@ const SignUpPopup: React.FC<SignUpPopupProps> = ({text, setShowPopup, popupType,
     return (
         <div className={styles.popupOverlay}>
             <div ref={ref} className={styles.popupWrapper}>
-                <Image onClick={hidePopup} className={styles.closeImg} src={closeImg} alt='closeImg'/>
+                <button onClick={hidePopup} className={styles.closeImg}></button>
                 <div className={styles.innerWrapper}>
                     {popupType === 'signIn' ?
                         <>
